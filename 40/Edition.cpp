@@ -46,5 +46,5 @@ void Edition::showInfo() const
     cout << "Name: " << name << endl;
     cout << "Author: " << author << endl;
     cout << "Is Exist: " << boolalpha<< isExist << endl;
-    cout << "Year: " << year << endl << endl;
+    cout << "Year: " << year << endl;
 }
