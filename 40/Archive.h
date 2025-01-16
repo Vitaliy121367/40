@@ -45,7 +45,10 @@ public:
 	shared_ptr<Edition>finedEdition(string name) {
 		for (auto item : Catalog)
 		{
-			return item;
+			if (item->getName()== name && item->getIsExist())
+			{
+				return item;
+			}
 		}
 		return nullptr;
 	}
