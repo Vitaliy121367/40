@@ -41,5 +41,13 @@ public:
 	~Archive();
 
 	void showCatalog()const;
+
+	shared_ptr<Edition>finedEdition(string name) {
+		for (auto item : Catalog)
+		{
+			return item;
+		}
+		return nullptr;
+	}
 };
 
