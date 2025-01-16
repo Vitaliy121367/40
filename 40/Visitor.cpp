@@ -14,6 +14,21 @@ void Visitor::takeEdition(shared_ptr<Edition> obj)
 	}
 }
 
+void Visitor::returnEdition(string name)
+{
+	for (int i=0; i < visitorList.size();i++)
+	{
+		if (visitorList[i]->getName() == name)
+		{
+			visitorList[i]->setIsExist(true);
+			visitorList.erase(visitorList.begin()+i);
+			cout << this->name << " return:\n";
+			return;
+		}
+	}
+	cout << "Not fined: " << name << endl;
+}
+
 void Visitor::showVisitor() const
 {
 	cout << "-------------------------------------------------\n";

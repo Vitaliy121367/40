@@ -14,5 +14,9 @@ int main()
 	Vlad.takeEdition(ItStep.finedEdition("Harry Potter"));
 	Vlad.showVisitor();
 	ItStep.showCatalog();
+	Vlad.returnEdition("C++");
+	Vlad.returnEdition("C#");
+	Vlad.showVisitor();
+	ItStep.showCatalog();
 
 }

@@ -12,6 +12,7 @@ class Visitor
 public:
 	Visitor(string name);
 	void takeEdition(shared_ptr<Edition> obj);
+	void returnEdition(string name);
 	void showVisitor()const;
 };
 
