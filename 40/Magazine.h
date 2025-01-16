@@ -7,7 +7,10 @@ protected:
 public:
 	Magazine();
 	Magazine(string name, string author, bool isExist, int year, int number);
+	~Magazine(){ cout << "~Magazine\n"; };
 
 	int getNumber();
+
+	virtual void showInfo()const override;
 };
 
